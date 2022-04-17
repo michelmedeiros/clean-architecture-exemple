@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BusinessException extends Exception {
 
-    public BusinessException() {
+    private BusinessException() {
     }
 
     public BusinessException(String message) {

@@ -1,8 +1,5 @@
 package br.com.clean.architecture.example.exceptions;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class InvalidEncryptException extends Exception {
 
     private InvalidEncryptException() {

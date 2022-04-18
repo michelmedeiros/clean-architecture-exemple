@@ -2,7 +2,6 @@ package br.com.clean.architecture.example.aes;
 
 import br.com.clean.architecture.example.contract.EncryptPassword;
 import br.com.clean.architecture.example.exceptions.InvalidEncryptException;
-import org.springframework.stereotype.Service;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;
@@ -13,7 +12,6 @@ import java.security.SecureRandom;
 import java.util.Base64;
 import java.util.Objects;
 
-@Service
 public class PasswordAlgorithmAES implements EncryptPassword {
 
     public static final String AES_CBC_PKCS_ALGORITHM = "AES/CBC/PKCS5Padding";

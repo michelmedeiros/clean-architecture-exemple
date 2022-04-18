@@ -7,13 +7,11 @@ import br.com.clean.architecture.example.jpa.repository.StudentJdbcRepository;
 import br.com.clean.architecture.example.vo.Cpf;
 import br.com.clean.architecture.example.vo.Mail;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-@Service
 @RequiredArgsConstructor
 public class StudentJdbcService implements StudentRepository {
 

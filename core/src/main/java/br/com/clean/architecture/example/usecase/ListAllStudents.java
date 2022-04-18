@@ -4,13 +4,15 @@ import br.com.clean.architecture.example.contract.StudentRepository;
 import br.com.clean.architecture.example.entity.Student;
 import lombok.RequiredArgsConstructor;
 
+import java.util.List;
+
 @RequiredArgsConstructor
-public class RegisterStudent {
+public class ListAllStudents {
 
     private final StudentRepository studentRepository;
 
-    public Student execute(Student student) {
-        return studentRepository.addRegistration(student);
+    public List<Student> execute() {
+        return studentRepository.listAll();
     }
 
 

@@ -1,4 +1,4 @@
-package br.com.clean.architecture.example.rest.dto;
+package br.com.clean.architecture.example.rest.dto.request;
 
 import br.com.clean.architecture.example.entity.Student;
 import br.com.clean.architecture.example.vo.Cpf;
@@ -10,15 +10,14 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentDTO {
-    private Long id;
+public class StudentRequestDTO {
     private String name;
     private String password;
     private String cpf;
     private int age;
     private String mail;
 
-    public Student from() {
+    public Student toDomain() {
         return Student.builder()
                 .name(this.getName())
                 .password(this.getPassword())

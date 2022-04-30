@@ -1,6 +1,6 @@
 package br.com.clean.architecture.example.contract;
 
-import br.com.clean.architecture.example.entity.Student;
+import br.com.clean.architecture.example.domain.Student;
 import br.com.clean.architecture.example.vo.Cpf;
 import br.com.clean.architecture.example.vo.Mail;
 

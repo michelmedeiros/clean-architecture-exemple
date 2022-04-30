@@ -1,7 +1,7 @@
 package br.com.clean.architecture.example.jpa.service;
 
 import br.com.clean.architecture.example.contract.StudentRepository;
-import br.com.clean.architecture.example.entity.Student;
+import br.com.clean.architecture.example.domain.Student;
 import br.com.clean.architecture.example.jpa.entity.StudentEntity;
 import br.com.clean.architecture.example.jpa.repository.StudentJdbcRepository;
 import br.com.clean.architecture.example.vo.Cpf;
@@ -20,23 +20,24 @@ public class StudentJdbcService implements StudentRepository {
     @Override
     public Student findByCpf(Cpf cpf) {
         var entity = repository.findByCpf(cpf.getNumberCpf());
-        return entity.assembly();
+        return entity.fromEntity();
     }
 
     @Override
     public Student findByMail(Mail mail) {
         var entity = repository.findByMail(mail.getMailAddress());
-        return entity.assembly();
+        return entity.fromEntity();
     }
 
     @Override
     public Student addRegistration(Student student) {
         StudentEntity entity = StudentEntity.builder()
+                .id(student.getId())
                 .age(student.getAge())
                 .cpf(student.getCpf().getNumberCpf())
                 .mail(student.getMail().getMailAddress())
                 .build();
-        return repository.save(entity).assembly();
+        return repository.save(entity).fromEntity();
     }
 
     @Override
@@ -48,6 +49,6 @@ public class StudentJdbcService implements StudentRepository {
     }
 
     private Student createStudent(StudentEntity entity) {
-        return entity.assembly();
+        return entity.fromEntity();
     }
 }

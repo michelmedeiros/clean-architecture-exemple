@@ -1,8 +1,6 @@
 package br.com.clean.architecture.example.rest.dto.response;
 
-import br.com.clean.architecture.example.entity.Student;
-import br.com.clean.architecture.example.vo.Cpf;
-import br.com.clean.architecture.example.vo.Mail;
+import br.com.clean.architecture.example.domain.Student;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,6 +20,7 @@ public class StudentResponseDTO {
 
     public static StudentResponseDTO fromDomain(Student student) {
         return StudentResponseDTO.builder()
+                .id(student.getId())
                 .name(student.getName())
                 .password(student.getPassword())
                 .age(student.getAge())

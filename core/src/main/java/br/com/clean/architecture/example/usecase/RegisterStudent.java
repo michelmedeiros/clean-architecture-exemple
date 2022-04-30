@@ -1,7 +1,7 @@
 package br.com.clean.architecture.example.usecase;
 
 import br.com.clean.architecture.example.contract.StudentRepository;
-import br.com.clean.architecture.example.entity.Student;
+import br.com.clean.architecture.example.domain.Student;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

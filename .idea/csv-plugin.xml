@@ -45,6 +45,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\dataprovider\src\test\java\br\com\clean\architecture\example\jpa\StudentGatewayTest.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\docker\docker\db\data\mysql\general_log.CSV">
           <value>
             <Attribute>

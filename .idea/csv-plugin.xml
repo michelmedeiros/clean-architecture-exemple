@@ -59,6 +59,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\entrypoint\src\test\java\br\com\clean\architecture\example\AbstractControllerTest.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\entrypoint\src\test\java\br\com\clean\architecture\example\rest\StudentControllerTest.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\main\java\br\com\clean\architecture\example\ExampleApplication.java">
           <value>
             <Attribute>

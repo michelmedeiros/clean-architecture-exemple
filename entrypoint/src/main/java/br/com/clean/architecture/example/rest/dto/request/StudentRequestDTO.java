@@ -4,12 +4,14 @@ import br.com.clean.architecture.example.domain.Student;
 import br.com.clean.architecture.example.vo.Cpf;
 import br.com.clean.architecture.example.vo.Mail;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class StudentRequestDTO {
     private String name;
     private String password;

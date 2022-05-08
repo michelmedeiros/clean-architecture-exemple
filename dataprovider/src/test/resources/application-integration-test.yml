@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: example
+  config:
+    activate:
+      on-profile: integration-test
+  datasource:
+    username: test
+    password: hotmart@2020
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hub_access_test

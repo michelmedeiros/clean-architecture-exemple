@@ -4,7 +4,6 @@ import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext;
 import org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -23,7 +22,7 @@ public class ExampleApplication {
 	@Bean
 	BeanFactoryPostProcessor beanFactoryPostProcessor(ApplicationContext beanRegistry) {
 		return beanFactory -> {
-			genericApplicationContext((BeanDefinitionRegistry) ((AnnotationConfigReactiveWebServerApplicationContext) beanRegistry).getBeanFactory());
+			genericApplicationContext((BeanDefinitionRegistry) ((AnnotationConfigServletWebServerApplicationContext) beanRegistry).getBeanFactory());
 		};
 	}
 

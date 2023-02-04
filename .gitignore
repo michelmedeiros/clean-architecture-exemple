@@ -32,3 +32,6 @@ build/
 .vscode/
 
 .DS_Store
+
+### Files Project ###
+dataprovider/docker/*

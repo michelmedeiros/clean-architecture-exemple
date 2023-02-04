@@ -9,8 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="app" />
         <module name="core" />
-        <module name="entrypoint" />
         <module name="dataprovider" />
+        <module name="entrypoint" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
